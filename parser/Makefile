@@ -1,6 +1,6 @@
 CC = cc
 LEXER = flex
-PARSER = bison
+PARSER = bison -t
 
 all : psh_parser
 
@@ -12,4 +12,4 @@ lex.yy.c : psh.l psh.tab.h
 
 
 psh_parser : lex.yy.c psh.tab.c psh.tab.h
-	$(CC) -o $@ psh.tab.c lex.yy.c
+	$(CC) -o $@ psh.tab.c lex.yy.c -lm

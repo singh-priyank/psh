@@ -19,6 +19,8 @@
 "-"		{return T_MINUS;}
 "*"		{return T_MULTIPLY;}
 "/"		{return T_DIVIDE;}
+"%"		{return T_REMAINDER;}
+"**"		{return T_POWER;}
 "("		{return T_LEFT;}
 ")"		{return T_RIGHT;}
 "exit"		{return T_QUIT;}
