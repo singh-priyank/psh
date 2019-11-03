@@ -1,2 +1,5 @@
 # psh
-Minishell for course project
+Minishell for course project ( *A simple calculator* )
+
+Firstly run **make file**, it will compile all the files and will create an executable file **psh_parser**
+For output run **./psh_parser**
